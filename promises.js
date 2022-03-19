@@ -25,13 +25,15 @@ const testPromise = () => {
 const myPromise = testPromise()
 
 myPromise
-.then(()=> {
+.then((msg)=> {
 	console.log("%c'myPromise' is fullfilled 👍", 'color: green; font-weight:bold')
 	console.log("(then) State of 'myPromise' :'", myPromise)
+	console.log("Message: ", msg)
 })
-.catch(()=> {
+.catch((err)=> {
 	console.log("%c'myPromise' is rejected 🛑", 'color:red; font-weight:bold')
 	console.log("(catch) State of 'myPromise' :'", myPromise)
+	console.log("Error message: ", err)
 })
 
 // Before we answer the prompt, the Promise will be
