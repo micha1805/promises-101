@@ -2,7 +2,7 @@ const testPromise = () => {
 
 	return new Promise((resolve, reject)=> {
 
-		// We wait 1 second before asking resolve or reject
+		// We wait 3 seconds before asking resolve or reject
 		// Meanwhile the Promise is by definition pending
 		setTimeout(()=>{
 
