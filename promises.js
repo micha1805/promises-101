@@ -14,7 +14,7 @@ const testPromise = () => {
 				reject('The Promise is rejected')
 			}
 
-		}, 1000)
+		}, 3000)
 
 	})
 
